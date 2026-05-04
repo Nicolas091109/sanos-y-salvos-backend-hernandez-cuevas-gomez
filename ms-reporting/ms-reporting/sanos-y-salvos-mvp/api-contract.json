@@ -1,0 +1,49 @@
+{
+  "endpoint": "/api/v1/capacity/dashboard",
+  "method": "GET",
+  "description": "Obtiene la vista consolidada de capacidad de recursos y proyectos",
+  "response": {
+    "summary": {
+      "totalResources": 150,
+      "totalCapacityHours": 6000,
+      "allocatedHours": 4500,
+      "availableHours": 1500,
+      "overallUtilization": 75.0
+    },
+    "resources": [
+      {
+        "id": 1,
+        "fullName": "Juan Pérez",
+        "role": "Senior Developer",
+        "skills": ["Java", "Spring Boot", "React"],
+        "capacity": {
+          "total": 40,
+          "allocated": 30,
+          "available": 10,
+          "utilization": 75.0
+        },
+        "assignments": [
+          {
+            "projectId": 101,
+            "projectName": "E-commerce Migration",
+            "hours": 20
+          },
+          {
+            "projectId": 102,
+            "projectName": "Internal Tooling",
+            "hours": 10
+          }
+        ]
+      }
+    ],
+    "activeProjects": [
+      {
+        "id": 101,
+        "name": "E-commerce Migration",
+        "totalAllocatedHours": 1200,
+        "resourceCount": 8,
+        "status": "ACTIVE"
+      }
+    ]
+  }
+}
