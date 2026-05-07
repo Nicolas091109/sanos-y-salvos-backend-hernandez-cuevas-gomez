@@ -1,0 +1,5 @@
+cl\duoc\sanosysalvos\identity\controller\AuthController.class
+cl\duoc\sanosysalvos\identity\IdentityApplication.class
+cl\duoc\sanosysalvos\identity\repository\UsuarioRepository.class
+cl\duoc\sanosysalvos\identity\model\Usuario.class
+cl\duoc\sanosysalvos\identity\config\PostgresConnectionConfig.class

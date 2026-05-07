@@ -25,10 +25,10 @@ public class Ubicacion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, precision = 10, scale = 7)
+    @Column(nullable = false) // Quita precision y scale
     private Double latitud;
 
-    @Column(nullable = false, precision = 10, scale = 7)
+    @Column(nullable = false) // Quita precision y scale
     private Double longitud;
 
     @Column(nullable = false)
